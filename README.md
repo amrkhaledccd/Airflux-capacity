@@ -12,7 +12,7 @@ As It is clear that I might complicate things too much by assumptions and it wou
 Since the expected time is 5-8 hours I assumed It is simple FIFO assignment problem.
 
 ## Assumptions
-1. I assumed data are stored in DB, I used H2 in-memory DB to make it easy for you to set everything it up,
+1. I assumed data are stored in DB, I used H2 in-memory DB to make it easy for you to set everything up,
 I could've also parse data from files but I choosed to use LiquiBase to insert data in DB.
 
 2. I assumed that each aircraft can fly anywhere.
