@@ -32,6 +32,7 @@ By the end of flights a positioning flights should be scheduled to all aircraft 
 but this is not implemented, but it is easy to implement (skipped it for time constraint).
 
 ## Database
+![Screenshot](Air_flux.png)
 
 ## System components
 
