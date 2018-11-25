@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="07" author="amr">
+        <comment>Inserting Schedule</comment>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="14"/>
+            <column name="departure" value="2018-04-13 09:00:00"/>
+            <column name="flight_time" value="02:30"/>
+            <column name="origin_code" value="LHR"/>
+            <column name="destination_code" value="HAM"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="15"/>
+            <column name="departure" value="2018-04-13 12:00:00"/>
+            <column name="flight_time" value="02:00"/>
+            <column name="origin_code" value="LHR"/>
+            <column name="destination_code" value="TXL"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="16"/>
+            <column name="departure" value="2018-04-13 17:00:00"/>
+            <column name="flight_time" value="02:00"/>
+            <column name="origin_code" value="LHR"/>
+            <column name="destination_code" value="TXL"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="17"/>
+            <column name="departure" value="2018-04-13 20:30:00"/>
+            <column name="flight_time" value="02:00"/>
+            <column name="origin_code" value="LHR"/>
+            <column name="destination_code" value="MUC"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

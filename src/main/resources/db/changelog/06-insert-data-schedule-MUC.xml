@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="06" author="amr">
+        <comment>Inserting Schedule</comment>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="6"/>
+            <column name="departure" value="2018-04-13 10:00:00"/>
+            <column name="flight_time" value="02:00"/>
+            <column name="origin_code" value="MUC"/>
+            <column name="destination_code" value="LHR"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="7"/>
+            <column name="departure" value="2018-04-13 13:00:00"/>
+            <column name="flight_time" value="01:00"/>
+            <column name="origin_code" value="MUC"/>
+            <column name="destination_code" value="TXL"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="8"/>
+            <column name="departure" value="2018-04-13 15:00:00"/>
+            <column name="flight_time" value="01:00"/>
+            <column name="origin_code" value="MUC"/>
+            <column name="destination_code" value="TXL"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="9"/>
+            <column name="departure" value="2018-04-13 15:30:00"/>
+            <column name="flight_time" value="02:00"/>
+            <column name="origin_code" value="MUC"/>
+            <column name="destination_code" value="LHR"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="10"/>
+            <column name="departure" value="2018-04-13 17:30:00"/>
+            <column name="flight_time" value="01:00"/>
+            <column name="origin_code" value="MUC"/>
+            <column name="destination_code" value="HAM"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="11"/>
+            <column name="departure" value="2018-04-13 18:00:00"/>
+            <column name="flight_time" value="02:30"/>
+            <column name="origin_code" value="MUC"/>
+            <column name="destination_code" value="LHR"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="12"/>
+            <column name="departure" value="2018-04-13 22:00:00"/>
+            <column name="flight_time" value="02:00"/>
+            <column name="origin_code" value="MUC"/>
+            <column name="destination_code" value="LHR"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="13"/>
+            <column name="departure" value="2018-04-13 20:00:00"/>
+            <column name="flight_time" value="01:00"/>
+            <column name="origin_code" value="MUC"/>
+            <column name="destination_code" value="TXL"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

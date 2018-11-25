@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="03" author="amr">
+        <comment>Inserting Aircraft</comment>
+        <insert tableName="aircraft">
+            <column name="serial" value="0001"/>
+            <column name="manufacturer" value="Boeing"/>
+            <column name="model" value="737"/>
+            <column name="registration" value="FL-0001"/>
+            <column name="city_code" value="BE"/>
+        </insert>
+        <insert tableName="aircraft">
+            <column name="serial" value="0002"/>
+            <column name="manufacturer" value="Airbus"/>
+            <column name="model" value="A321"/>
+            <column name="registration" value="FL-0002"/>
+            <column name="city_code" value="MU"/>
+        </insert>
+        <insert tableName="aircraft">
+            <column name="serial" value="0003"/>
+            <column name="manufacturer" value="Boeing"/>
+            <column name="model" value="747-400"/>
+            <column name="registration" value="FL-0003"/>
+            <column name="city_code" value="LDN"/>
+        </insert>
+        <insert tableName="aircraft">
+            <column name="serial" value="0004"/>
+            <column name="manufacturer" value="Airbus"/>
+            <column name="model" value="A320"/>
+            <column name="registration" value="FL-0004"/>
+            <column name="city_code" value="HAM"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

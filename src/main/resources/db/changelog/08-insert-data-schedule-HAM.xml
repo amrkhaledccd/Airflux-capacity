@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="08" author="amr">
+        <comment>Inserting Schedule</comment>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="18"/>
+            <column name="departure" value="2018-04-13 10:00:00"/>
+            <column name="flight_time" value="01:00"/>
+            <column name="origin_code" value="HAM"/>
+            <column name="destination_code" value="MUC"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="19"/>
+            <column name="departure" value="2018-04-13 13:00:00"/>
+            <column name="flight_time" value="01:00"/>
+            <column name="origin_code" value="HAM"/>
+            <column name="destination_code" value="MUC"/>
+        </insert>
+        <insert tableName="schedule">
+            <column name="id" valueNumeric="20"/>
+            <column name="departure" value="2018-04-13 20:00:00"/>
+            <column name="flight_time" value="01:00"/>
+            <column name="origin_code" value="HAM"/>
+            <column name="destination_code" value="MUC"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
